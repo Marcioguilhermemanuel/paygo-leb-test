@@ -1,0 +1,24 @@
+{
+  "name": "paygo-integration-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Isolated laboratory for testing PayGo Checkout Angola API integration",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @paygo/api --filter @paygo/web dev",
+    "dev:api": "pnpm --filter @paygo/api dev",
+    "dev:web": "pnpm --filter @paygo/web dev",
+    "build": "pnpm --filter @paygo/shared build && pnpm --filter @paygo/api build && pnpm --filter @paygo/web build",
+    "test": "pnpm --filter @paygo/api test",
+    "test:concurrency": "pnpm --filter @paygo/api test:concurrency",
+    "prisma:generate": "prisma generate --schema=./prisma/schema.prisma",
+    "prisma:push": "prisma db push --schema=./prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.19.3",
+    "prisma": "^6.5.0",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

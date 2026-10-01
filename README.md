@@ -91,7 +91,7 @@ Abra o navegador em: [http://localhost:3000](http://localhost:3000).
 Para criar um produto de teste sem assumir valores pré-estabelecidos:
 
 1. No Dashboard, clique em **[ Criar Produto ]**.
-2. Defina o nome e informe o valor desejado em Kwanzas (Kz) (e.g., 50 Kz, 100 Kz).
+2. Defina o nome e informe o valor desejado em Kwanzas (Kz) (e.g., 1 Kz, 100 Kz).
 3. Ative os métodos aceitos (`Multicaixa Express`, `Referência`).
 4. Clique em **Confirmar e Criar**.
 5. O backend chamará `POST /products` na PayGo e salvará o `paygoProductId` retornado.
